@@ -1,0 +1,6 @@
+[tagpr]
+	vPrefix = true
+	releaseBranch = test-release
+	versionFile = justfile
+	command = just version-up 0.2.3
+	release = false
