@@ -2,6 +2,7 @@ alias build := youki-release
 alias youki := youki-dev
 
 KIND_CLUSTER_NAME := 'youki'
+version := '0.2.3'
 
 cwd := justfile_directory()
 
@@ -189,7 +190,7 @@ ci-musl-prepare: ci-prepare
     echo "Unknown system. The CI is only configured for Ubuntu. You will need to forge your own path. Good luck!"
     exit 1
 
-version-up version:
+version-up:
     git grep -l "^version = .* # MARK: Version" | xargs sed -i 's/version = "[0-9]\.[0-9]\.[0-9]" # MARK: Version/version = "{{version}}" # MARK: Version/g'
     git grep -l "} # MARK: Version" | grep -v justfile | xargs sed -i 's/version = "[0-9]\.[0-9]\.[0-9]" } # MARK: Version/version = "{{version}}" } # MARK: Version/g'
     {{ cwd }}/scripts/release_tag.sh {{version}}
