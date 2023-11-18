@@ -2,6 +2,7 @@ alias build := youki-release
 alias youki := youki-dev
 
 KIND_CLUSTER_NAME := 'youki'
+VERSION_LATEST := 'v0.2.3'
 
 cwd := justfile_directory()
 
@@ -190,6 +191,8 @@ ci-musl-prepare: ci-prepare
     exit 1
 
 version-up version:
-    git grep -l "^version = .* # MARK: Version" | xargs sed -i 's/version = "[0-9]\.[0-9]\.[0-9]" # MARK: Version/version = "{{version}}" # MARK: Version/g'
-    git grep -l "} # MARK: Version" | grep -v justfile | xargs sed -i 's/version = "[0-9]\.[0-9]\.[0-9]" } # MARK: Version/version = "{{version}}" } # MARK: Version/g'
-    {{ cwd }}/scripts/release_tag.sh {{version}}
+    #!/usr/bin/env bash
+    version={{VERSION_LATEST}}
+    git grep -l "^version = .* # MARK: Version" | xargs sed -i 's/version = "[0-9]\.[0-9]\.[0-9]" # MARK: Version/version = "${version#v}" # MARK: Version/g'
+    git grep -l "} # MARK: Version" | grep -v justfile | xargs sed -i 's/version = "[0-9]\.[0-9]\.[0-9]" } # MARK: Version/version = "${version#v}" } # MARK: Version/g'
+    {{ cwd }}/scripts/release_tag.sh ${version#v}
