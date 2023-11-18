@@ -1,0 +1,5 @@
+[tagpr]
+	vPrefix = true
+	releaseBranch = auto_release_docs_pr
+	versionFile = justfile
+	command = just version-up
