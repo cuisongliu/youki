@@ -1,0 +1,17 @@
+name: 🚀 tagpr
+on:
+  push:
+    branches:
+      - auto_release_docs_pr
+jobs:
+  tagpr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install just
+        uses: taiki-e/install-action@just
+      - uses: Songmu/tagpr@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
