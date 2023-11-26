@@ -2,6 +2,7 @@ alias build := youki-release
 alias youki := youki-dev
 
 KIND_CLUSTER_NAME := 'youki'
+VERSION_LATEST := 'v0.2.3'
 
 cwd := justfile_directory()
 
@@ -189,7 +190,7 @@ ci-musl-prepare: ci-prepare
     echo "Unknown system. The CI is only configured for Ubuntu. You will need to forge your own path. Good luck!"
     exit 1
 
-version-up version:
-    git grep -l "^version = .* # MARK: Version" | xargs sed -i 's/version = "[0-9]\.[0-9]\.[0-9]" # MARK: Version/version = "{{version}}" # MARK: Version/g'
-    sed -i s/_[0-9]_[0-9]_[0-9]_/_{{ replace(version, '.', '_') }}_/g  docs/src/user/basic_setup.md
-    sed -i 's/[0-9]\.[0-9]\.[0-9]/{{version}}/g'  docs/src/user/basic_setup.md
+version-up:
+    git grep -l "^version = .* # MARK: Version" | xargs sed -i 's/version = "[0-9]\.[0-9]\.[0-9]" # MARK: Version/version = "{{VERSION_LATEST}}" # MARK: Version/g'
+    sed -i s/_[0-9]_[0-9]_[0-9]_/_{{ replace(VERSION_LATEST, '.', '_') }}_/g  docs/src/user/basic_setup.md
+    sed -i 's/[0-9]\.[0-9]\.[0-9]/{{VERSION_LATEST}}/g'  docs/src/user/basic_setup.md
