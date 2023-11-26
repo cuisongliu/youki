@@ -28,7 +28,7 @@ jobs:
           commit-message: |
             🤖 Automatically updates the version numbers in download links within the documentation.
           branch: release-note-${{ inputs.version }}
-          base: test-release
+          base: auto_release_docs_pr
           signoff: true
           labels: |
             kind/documentation
