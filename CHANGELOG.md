@@ -1,5 +1,57 @@
 # Changelog
 
+## [v0.3.1](https://github.com/cuisongliu/youki/commits/v0.3.1) - 2023-12-17
+### Other Changes
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/1
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/2
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/3
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/4
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/5
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/6
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/7
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/8
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/9
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/10
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/11
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/12
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/13
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/14
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/15
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/16
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/17
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/18
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/19
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/20
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/21
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/22
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/23
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/24
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/25
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/26
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/27
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/28
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/29
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/30
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/31
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/32
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/33
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/34
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/35
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/36
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/37
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/38
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/39
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/40
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/43
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/44
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/45
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/60
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/73
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/74
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/75
+- [pull] main from containers:main by @pull in https://github.com/cuisongliu/youki/pull/76
+- docs(main): auto release node using just by @cuisongliu in https://github.com/cuisongliu/youki/pull/78
+
 ## [v0.3.1](https://github.com/containers/youki/compare/v0.3.0...v0.3.1) - 2023-12-17
 ### 💪 Improvements
 - fix(libcgroups): report CPU throttling stats in 'libcgroups::v2' by @xiaoyang-sde in https://github.com/containers/youki/pull/2524
